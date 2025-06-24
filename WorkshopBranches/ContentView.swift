@@ -14,8 +14,18 @@ struct ContentView: View {
                 .imageScale(.large)
                 .foregroundStyle(.tint)
             Text("Hello, world!")
+            
+            Button {
+                destroyWorld()
+            } label: {
+                Text("Goodbye, world!")
+            }
         }
         .padding()
+    }
+    
+    private func destroyWorld() {
+        
     }
 }
 
